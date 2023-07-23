@@ -18,7 +18,7 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
-const BuildKitSock = "unix:///run/buildkit/buildkitd.sock"
+const BuildKitSock = "tcp://localhost:1234"
 const DefaultPlatforms = "linux/arm64,linux/amd64"
 
 type BuildKitOptions struct {
